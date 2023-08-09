@@ -1,0 +1,85 @@
+.container {
+    text-align: center;
+    position: relative;
+}
+
+p {
+    text-align: center;
+    color: #474747;
+    font-family: monospace;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.star {
+    font-size: 24px;
+    color: #ffdc49;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.star.active {
+    color: #f39c12;
+}
+
+.confetti-container { /* Agregado para crear un contenedor de confetis */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Para que los confetis no bloqueen interacciones */
+    z-index: 100; /* Para que los confetis aparezcan sobre otros elementos */
+}
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #f39c12;
+    opacity: 0.8;
+    transform: rotate(45deg);
+    animation: confettiFall linear 5s infinite;
+}
+
+.confetti.red {
+    background-color: #e74c3c;
+}
+.confetti.green {
+    background-color: #2ecc71;
+}
+.confetti.blue {
+    background-color: #3498db;
+}
+
+@keyframes confettiFall {
+    0% {
+        transform: translate(0px, -10px);
+    }
+    100% {
+        transform: translate(0px, 100vh);
+    }
+}
