@@ -1,13 +1,13 @@
 setTimeout(cambiaMensaje,2300) 
 
 function cambiaMensaje(){
-    document.getElementById("loading-message").innerText = "Enviado!"
+    document.getElementById("loading-message").innerText = "¡Enviado!"
 }
 
 setTimeout(cambiarMensaje,2800)
 
 function cambiarMensaje(){
-    document.getElementById("feliz").innerText = "Feliz Cumpleaños!!! "
+    document.getElementById("feliz").innerText = "¡Feliz San Valentín!"
 }
 
 function cambiarTexto() {
